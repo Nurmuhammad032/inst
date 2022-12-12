@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.instagram-font {
+  font-family: Cookie, cursive;
+}
+
+.bg-blue-inst {
+  background: #005c98;
+}
+
+.wrap-login100-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 5px 30px 0 rgb(3 216 222 / 20%);
+  -moz-box-shadow: 0 5px 30px 0 rgba(3, 216, 222, 0.2);
+  -webkit-box-shadow: 0 5px 30px 0 rgb(3 216 222 / 20%);
+  -o-box-shadow: 0 5px 30px 0 rgba(3, 216, 222, 0.2);
+  -ms-box-shadow: 0 5px 30px 0 rgba(3, 216, 222, 0.2);
+}
+.login100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(
+    right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+  );
+  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  top: 0;
+  left: -100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  left: 0;
+}
+.login100-form-btn {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+.container-login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-login100-form-btn button {
+  background: 0 0;
+}
+/* @layer components {
+  .inputcha {
+    @apply text-xs p-3 mb-3 bg-[#f0f0f0] focus:border-[#b9b7b7] border-[#dbdbdb] text-sm outline-none rounded-sm bg-white w-full
+    text-xs p-3 mb-3 bg-[#f0f0f0] focus:border-[#b9b7b7] border-[#dbdbdb] text-sm outline-none rounded-sm bg-white w-full;
+  }
+} */
+
+.text-blue-inst {
+  color: #005c98;
+}
+
+.insta-logo {
+  background: conic-gradient(
+    from 171.89deg at 42.28% 61.08%,
+    #ff353b -50.79deg,
+    #ffce52 26.38deg,
+    #ff3d2f 82.51deg,
+    #b23aa0 103.08deg,
+    #4168c9 142.13deg,
+    #7742ca 183.92deg,
+    #f12ada 219.78deg,
+    #e126ac 273.2deg,
+    #ff353b 309.21deg,
+    #ffce52 386.38deg
+  );
+}
+
+.insta-logo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 75%;
+  height: 75%;
+  background-color: white;
+}
+
+.insta-child {
+  position: absolute;
+  top: -0.5rem;
+  background: linear-gradient(to bottom, #f12ada 60%, #ffce52);
+  right: -0.5rem;
+  border-radius: 50%;
+}
